@@ -1,0 +1,86 @@
+DAILY MEASUREMENT EXCEL FILER - HOW TO USE
+============================================
+
+WHAT THIS DOES
+--------------
+You give it today's PDF (typed/dictated patient entries). It reads it and
+adds the entries as new rows into the correct month's tab of one single
+Excel file. It never changes anything already saved - it only adds new rows.
+
+Everything lives in ONE file called DAILY PATIENT RECORD.xlsx, with a tab
+along the bottom for each month (JANUARY 2026, FEBRUARY 2026, and so on),
+exactly like the old office file.
+
+
+STEP 1 - FIRST TIME ONLY: Choose where the Excel file is kept
+---------------------------------------------------------------
+1. Double-click "Daily_Measurement_Excel_Filer.exe"
+2. Click "Settings" on the dark bar down the left
+3. Click "Change" and pick (or create) a folder - for example an
+   "Excel Records" folder on the Desktop
+4. You only do this once. It remembers your choice next time.
+
+
+STEP 2 - EVERY DAY: Add today's PDF
+--------------------------------------
+Open the program and do ONE of these - whichever you prefer:
+
+  * DRAG the PDF file straight onto the box at the top, or
+  * CLICK the PDF in the "Recent PDFs" list (it shows PDFs from your
+    Downloads, Desktop and Documents folders, newest first), or
+  * CLICK "Browse..." if the PDF is saved somewhere unusual
+
+The program then switches to the "Activity" page and shows you exactly what
+was added, and lists anything it could NOT understand so you can add those
+by hand.
+
+A backup copy of the whole Excel file is saved automatically every time,
+in an "Excel Backups" folder next to this program.
+
+
+HOW TO TYPE/DICTATE THE PDF SO IT READS CORRECTLY
+-----------------------------------------------------
+Put the date ONCE at the very top. Then for each patient, one piece of
+information per line, with a BLANK LINE between patients:
+
+    Date: 1st September 2026
+
+    Name: Savita Aggarwal
+    Doctor: Self
+    Model Number: SC-3
+    Number of Units: 2
+    Mobile Number: 9876543210
+    Amount: 5000
+    Kakinada
+
+    Name: Ram Prasad
+    Doctor: Lal
+    Model Number: SC-19G
+    Number of Units: 2
+
+Words that are understood: Date, Name (or Patient), Doctor, Model Number
+(or Code), Number of Units (or Units), Mobile Number (or Mobile), Amount.
+
+Anything you write that ISN'T one of those (a city name, "FOC",
+"replacement", "on hold", etc.) automatically goes into the Miscellaneous
+column - no special word needed, just write it plainly on its own line.
+
+Small things that are handled for you automatically:
+  * "SC3" is saved as "SC-3"
+  * It doesn't matter where the colon sits: "Units: 2" and "Units :2"
+    both work
+  * If a mobile number isn't known, write "not known" or "not there" and
+    the mobile box is simply left empty
+
+
+IF SOMETHING GOES WRONG
+--------------------------
+- If the Excel file is open in Excel, the program can't add to it. It will
+  tell you plainly - just close the file in Excel and try again. Nothing
+  is lost.
+- If a patient's entry couldn't be understood, it is NOT guessed. It's
+  listed on the Activity page so you can add it into Excel by hand.
+- If the date can't be understood, NOTHING is added for that PDF - fix the
+  date line and try again.
+- If you see the same problem happening again and again, tell Roshan so the
+  program's rules can be fixed and you get an updated version.
